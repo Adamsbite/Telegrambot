@@ -79,11 +79,11 @@ docker compose up --build
 docker compose build
 
 # Tag images
-docker tag telegram-productivity-bot_bot your-username/productivity-bot:latest
-docker tag telegram-productivity-bot_ollama your-username/ollama-deepseek:latest
+docker tag telegram-productivity-bot-bot your-username/productivity-bot:latest
+docker tag telegram-productivity-bot-ollama your-username/ollama-deepseek:latest
 
 # Push to Docker Hub
-docker push your-username/productivity-bot:latest
+docker push your-username/telegram-productivity-bot:latest
 docker push your-username/ollama-deepseek:latest
 ```
 
