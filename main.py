@@ -40,7 +40,7 @@ notes_collection = db.notes
 tasks_collection = db.tasks
 
 class OllamaClient:
-    def __init__(self, base_url: str = "http://localhost:11434"):
+    def __init__(self, base_url: str = "http://ollama:11434"):
         self.base_url = base_url
         # Strict system prompt: return ONLY the final answer with bullet points.
         self.system_prompt = (

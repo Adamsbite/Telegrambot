@@ -1,0 +1,14 @@
+FROM ollama/ollama:latest
+
+# Create an entrypoint script
+RUN echo '#!/bin/sh\n\
+    ollama serve & \n\
+    sleep 10\n\
+    ollama pull deepseek-r1:1.5b\n\
+    wait' > /entrypoint.sh
+
+# Make the script executable
+RUN chmod +x /entrypoint.sh
+
+# Use the entrypoint script
+ENTRYPOINT ["/entrypoint.sh"]
