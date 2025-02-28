@@ -12,7 +12,7 @@ import aiohttp
 import motor.motor_asyncio
 
 # Load environment variables
-load_dotenv()
+load_dotenv() 
 
 # Configure logging
 logging.basicConfig(
