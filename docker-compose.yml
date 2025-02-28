@@ -7,13 +7,13 @@ services:
     restart: always
 
   ollama:
-    image: natachi/ollama-deepseek:latest
+    image: mrbitee/ollama:latest
     volumes:
       - ollama_data:/root/.ollama
     restart: always
 
   bot:
-    image: natachi/telegram-productivity-bot:latest
+    image: mrbitee/telegramb:latest
     depends_on:
       - mongodb
       - ollama
