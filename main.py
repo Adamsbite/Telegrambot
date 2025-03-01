@@ -211,7 +211,7 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         for task in tasks:
             content.append(f"Task ({task['timestamp'].strftime('%Y-%m-%d')}): {task['text']} (Status: {task['status']})")
         prompt = f"""Find exact matches for: "{query}"
-Content:
+Content: 
 {chr(10).join(content)}
 
 Return only the matching items as bullet points. Each bullet point should start with 🔹. Do not include any intermediate reasoning.
