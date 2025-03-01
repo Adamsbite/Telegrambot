@@ -377,10 +377,10 @@ def main() -> None:
         application.add_error_handler(error_handler)
 
         logger.info("🚀 Starting bot...")
-        application.run_polling()
+        application.run_polling() 
         
     except Exception as e:
-        logger.error(f"Startup error: {e}")
+        logger.error(f"Startup error: {e}") 
         raise
 
 if __name__ == '__main__':
