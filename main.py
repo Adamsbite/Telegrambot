@@ -133,7 +133,7 @@ Type `/help` anytime for assistance!
 async def save_note(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """📝 Save a note."""
     try:
-        if not context.args:
+        if not context.args: 
             await send_split_message(update, "❌ Please add note text\nExample: `/note Call John`", parse_mode="Markdown")
             return
         note = {
